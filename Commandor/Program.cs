@@ -10,6 +10,11 @@ namespace Commandor
     {
         static void Main(string[] args)
         {
+            Commando c1 = new Commando("inon","mmm","not");
+            Commando c2 = new Commando("a","b","c");
+            //show01.Properties();
+
+            c1.SayName("COLONEL");
 
 
 
