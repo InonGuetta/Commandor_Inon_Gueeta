@@ -6,9 +6,11 @@
     public bool status { get; set; } = true;
     public string shout { get; set; } = "I Enemy";
 
+    // הקונסטרקטור 
     public Enemy(string name)
     {
         this.name = name;
     }
+    
 
 }
