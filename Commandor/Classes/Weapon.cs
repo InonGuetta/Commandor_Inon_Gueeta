@@ -8,7 +8,7 @@ public class Weapon
     public string Refactor;
     public int Ammo;
 
-
+    //--------------------------------------------------------------------------------------------
     // constractor
     public Weapon(string name,string refactor, int ammo){
         this.Name = name;
@@ -16,7 +16,7 @@ public class Weapon
         this.Ammo = ammo;
     }
 
-
+    //--------------------------------------------------------------------------------------------
     public void Shoot()
     {
         if (Ammo > 0)

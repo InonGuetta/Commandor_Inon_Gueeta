@@ -10,16 +10,19 @@ namespace Commandor
     {
         static void Main(string[] args)
         {
-            Commando c1 = new Commando("inon","mmm","not");
-            Commando c2 = new Commando("a","b","c");
-            //show01.Properties();
+          
+            Commando c1 = new Commando("aaa","bbb","ccc");
+            SeaCommando c2 = new SeaCommando("david","dodi","lll");
+            AirCommando c3 = new AirCommando("inon","llo","singal");
+            c2.print();
+            c3.print();
+            Commando[] arr_solder = { c1,c2,c3};
 
-
-
-            c1.SayName("COLONEL");
             
-            c1.CodeName = "lll";
-            Console.WriteLine(c1.CodeName);
+            foreach (Commando item in arr_solder)
+            {
+                item.Attack();
+            }
 
         }
     }
