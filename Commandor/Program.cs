@@ -14,9 +14,12 @@ namespace Commandor
             Commando c2 = new Commando("a","b","c");
             //show01.Properties();
 
+
+
             c1.SayName("COLONEL");
-
-
+            
+            c1.CodeName = "lll";
+            Console.WriteLine(c1.CodeName);
 
         }
     }

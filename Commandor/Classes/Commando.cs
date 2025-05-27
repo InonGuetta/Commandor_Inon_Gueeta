@@ -4,7 +4,8 @@ using System.Globalization;
 public class Commando
 {
     private string Name;
-    private string CodeName;
+    public string CodeName { get; set; }
+    
     public string[] Tools = { "hammer", "rope", "chisel", "bag", "water buttle'" };
     public string Status;
 
@@ -15,6 +16,7 @@ public class Commando
         Console.WriteLine(this.Name);
     }
 
+    // המתודה הזאת משמשת כ getter
     public void SayName(string commanderRank)
     {
         //commanderRank.ToUpper();
@@ -32,9 +34,7 @@ public class Commando
         }
     }
 
-
-
-
+    
 
     public Commando(string name, string codeName, string status)
     {
