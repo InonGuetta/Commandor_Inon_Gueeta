@@ -52,7 +52,7 @@ public class Commando
         Status = "Hide";
     }
       
-    public void Attack()
+    public virtual void Attack()
     {
         Console.WriteLine($"the soldier {CodeName} is attack");
     }

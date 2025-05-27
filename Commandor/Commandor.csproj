@@ -43,10 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\AirCommando.cs" />
     <Compile Include="Classes\Commando.cs" />
     <Compile Include="Classes\Weapon.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Classes\SeaCommando.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
