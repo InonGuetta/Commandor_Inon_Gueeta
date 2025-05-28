@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Xml.Linq;
 
 public class Weapon
 {
@@ -29,4 +30,16 @@ public class Weapon
             Console.WriteLine("the ammo finish");
         }
     }
+    //--------------------------------------------------------------------------------------------
+
+    public void printInfo()
+    {
+        Console.WriteLine($"Name: {Name}");
+        Console.WriteLine($"Refactor: {Refactor}");
+        Console.WriteLine($"Ammo: {Ammo}");
+    }
+
+
+
+
 }

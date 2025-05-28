@@ -11,7 +11,7 @@ public class AirCommando : Commando
 
     public override void  Attack()
     {
-        Console.WriteLine($"the soldier {CodeName} from AirCommando");
+        Console.WriteLine($"the soldier {codeName} from AirCommando");
     }
 
     public void print()
