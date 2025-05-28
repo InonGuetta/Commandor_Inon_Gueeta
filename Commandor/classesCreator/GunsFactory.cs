@@ -32,9 +32,9 @@ public class GunsFactory
 
 
 
-    // קונסטרקטור 
-    public GunsFactory(){
-
+   
+    public void GunsFactoryMethod(){
+    //----------------------------------------------------------------------------------------
         Random rand = new Random();
         for (int i = 0; i<10;i++)
         {
@@ -42,7 +42,13 @@ public class GunsFactory
             refacto_list[rand.Next(0, refacto_list.Length)], ammo_bulls[rand.Next(0, ammo_bulls.Length)]));
         }
     }
+    //----------------------------------------------------------------------------------------
+    public void AddOneGun(string name,string refactor,int ammo)
+    {
 
+        guns.Add(new Weapon(name, refactor, ammo));
+
+    }
 
 
 

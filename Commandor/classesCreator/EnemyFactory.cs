@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 public class EnemyFactory
 {
     List<Enemy> enemies = new List<Enemy>();
-
+    // ---------------------------------------------------------------------------------------
     string[] arabNames = new string[]
         {
             "Ahmad", "Mohammed", "Ali", "Omar", "Yusuf", "Hassan", "Hussein", "Ibrahim", "Abdullah", "Khaled",
@@ -21,9 +21,9 @@ public class EnemyFactory
             "Obaida", "Yazid", "Younes", "Hani", "Samer", "Loai", "Najib", "Zaki", "Mazhar", "Ashraf",
             "Ehab", "Qutaibah", "Abdelrahman", "Rauf", "Shadi", "Tawfiq", "Qais", "Murad", "Tarik", "Rifat"
         };
-        
+    // -----------------------------------------------------------------------------------------
     Random rand = new Random();
-    public EnemyFactory()
+    public void EnemyFactoryMethod()
     {
         Enemy e1 = new Enemy("mohamad");
         enemies.Add(e1);
@@ -34,5 +34,10 @@ public class EnemyFactory
         }
     }
 
-
+    // --------------------------------------------------------------------------------------
+ 
+    public void AddOneEmeny(string name)
+    {
+        enemies.Add(new Enemy(name));
+    }
 }

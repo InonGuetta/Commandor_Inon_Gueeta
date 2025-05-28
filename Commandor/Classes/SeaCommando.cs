@@ -14,7 +14,7 @@ public class SeaCommando : Commando
     //--------------------------------------------------------------------------------------------
     public override void Attack()
     {
-        Console.WriteLine($"the soldier {CodeName} from SeaCommando");
+        Console.WriteLine($"the soldier {codeName} from SeaCommando");
     }
 
     //--------------------------------------------------------------------------------------------
