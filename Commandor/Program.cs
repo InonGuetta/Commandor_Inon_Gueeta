@@ -56,7 +56,11 @@ namespace Commandor
             //}
 
             Game game = new Game();
-            game.comman
+            game.commandofactory.CommandoFactorMethod();
+            foreach (Commando item in game.commandofactory.commandos)
+            {
+                item.printInfo();
+            }
         }
     }
 }
